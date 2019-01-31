@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do
+	city = City.create!(name: Faker::LeagueOfLegends.location,zip_code: Faker::Number.number(5))
+end
+
+10.times do
+	user = User.create!(first_name: Faker::Lebowski.character,last_name: Faker::LordOfTheRings.character,description: Faker::Lorem.sentence,age: Faker::Number.number(2),email: Faker::Internet.email,city_id: rand(City.ids.first..City.ids.last))
+end
+
+20.times do
+	gossip = Gossip.create!(title: Faker::SiliconValley.app,content: Faker::SiliconValley.motto,user_id: rand(User.ids.first..User.ids.last))
+end
+
+10.times do
+	tag = Tag.create!(title: Faker::Book.genre)
+end
+
+20.times do |i|
+	rand(Tag.ids.first..Tag.ids.last).times do
+		join_table_gossip_tag = JoinTableGossipTag.create!(gossip_id: Gossip.find(i+1).id,tag_id: rand(Tag.ids.first..Tag.ids.last))
+	end
+end
