@@ -8,7 +8,9 @@ THPotin/The Gossip Project/...
 Le parcours utilisateur est le suivant : sur ce super réseau social, un utilisateur va s'inscrire, renseigner son prénom et nom, son mail et son age, puis il précisera sa ville avec une recherche par code postal. 
 
 ON A FAIT LES BONUS, BITCH
-
+Tu veux comment ? :yeah:
+Tu veux like 20 fois random entre Gossip et Comment ? :cool:
+Tu veux comment des comments ? :easy_peasy:
 
 Pour faire fonctionner tout ça rien de bien compliqué : 
 ~~~~~~~~~~~~~~~~~~~~
