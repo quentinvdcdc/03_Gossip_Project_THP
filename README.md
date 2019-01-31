@@ -7,7 +7,7 @@ THPotin/The Gossip Project/...
 
 Le parcours utilisateur est le suivant : sur ce super réseau social, un utilisateur va s'inscrire, renseigner son prénom et nom, son mail et son age, puis il précisera sa ville avec une recherche par code postal. 
 
-ON A FAIS LES BONUS, BITCH
+ON A FAIT LES BONUS, BITCH
 
 
 Pour faire fonctionner tout ça rien de bien compliqué : 
@@ -18,11 +18,13 @@ $ rails db:migrate
 
 $ rails db:seed
 
-$ rails c
+$ rails console
 
 $ tp User.all
 
- ect...
+....
+
+$ tp Like.all
 ~~~~~~~~~~~~~~~~~~~~
 ------
 
